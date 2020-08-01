@@ -29,8 +29,6 @@ if (!getenv('DB_USER')) {
     putenv('DB_USER=root');
 }
 
-define('WPLANG', 'ja');
-
 /**
  * Load Plugin Configurations
  */
@@ -132,6 +130,7 @@ define('AUTOMATIC_UPDATER_DISABLED', true);
 define('DISALLOW_FILE_EDIT', true);
 define('DISALLOW_FILE_MODS', true);
 define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
+
 
 // Enforce SSL for Login/Admin in production
 if (env('WP_ENV') != "development") {
