@@ -29,6 +29,8 @@ if (!getenv('DB_USER')) {
     putenv('DB_USER=root');
 }
 
+define('WPLANG', 'ja');
+
 /**
  * Load Plugin Configurations
  */
