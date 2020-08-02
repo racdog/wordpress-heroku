@@ -78,7 +78,9 @@
 		"package:wpackagist-plugin/redis-cache:includes/object-cache.php",
 		"package:frc/batcache:advanced-cache.php"
 	  ],
-	    "web/app/languages/": ["vendor:koodimonni-language"]
+	  "web/app/languages/": ["vendor:koodimonni-language"],
+	  "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+	  "web/app/languages/themes/": ["vendor:koodimonni-theme-languages"]
 	},
 	"wordpress-install-dir": "web/wp"
   },
