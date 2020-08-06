@@ -111,6 +111,10 @@ define('DB_CHARSET', 'utf8mb4');
 define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
 
+/**********************************************************/
+define('MYSQL_COLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+/**********************************************************/
+
 /**
  * Authentication Unique Keys and Salts
  */
