@@ -50,7 +50,7 @@ includeDirectory($root_dir."/config/plugins/wordpress");
 if (!empty(getenv('CUSTOM_DB_URL'))) {
     $env = parse_url(getenv('CUSTOM_DB_URL'));
 
-    putenv(sprintf('DB_HOST=%s', $env['host']));
+    putenv(sprintf('DB_HOST=%s:%s', $env['host'], $env['port']));
     if (array_key_exists('port', $env)) {
         putenv(sprintf('DB_PORT=%s', $env['port']));
     }
